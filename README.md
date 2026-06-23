@@ -10,8 +10,6 @@
 - `notes/03_langchain_langgraph.md`: LangChain 구성 요소와 LangGraph 노드/엣지 단위 정리
 - `notes/notebook_index.md`: 주차/일차별 노트북 목록
 
-`50_AgenticAI` 폴더는 이번 정리 대상에서 제외했습니다.
-
 ## 학습 흐름
 
 1. Hugging Face 기본기
@@ -47,7 +45,7 @@ API 실습은 `.env`에 API 키와 모델 정보를 넣어서 실행합니다.
 
 ```env
 OPENAI_API_KEY=...
-MLAPI_MODEL=openai/gpt-4o-mini
+MLAPI_MODEL=openai/gpt-5o-mini
 ```
 
 로컬 LLM 실습은 Ollama 모델이 필요할 수 있습니다.
