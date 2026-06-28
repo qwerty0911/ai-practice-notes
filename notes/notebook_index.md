@@ -70,3 +70,13 @@
 - `notebooks/week4/day19/6.Adaptive RAG.ipynb`
 - `notebooks/week4/day19/7.로컬 LLM 기반의 RAG 챗봇 구현 - LlamaIndex.ipynb`
 - `notebooks/week4/day19/8.LlamaIndex Workflow.ipynb`
+
+## Week 5: Advanced RAG
+
+- `notebooks/week5/day21/01_chunking_compare.ipynb`
+- `notebooks/week5/day21/02_search_quality.ipynb`
+- `notebooks/week5/day21/03_hybrid_search.ipynb`
+- `notebooks/week5/day21/04_query_transform.ipynb`
+- `notebooks/week5/day21/05_rerank.ipynb`
+- `notebooks/week5/day21/06_modular_pipeline.ipynb`
+- `notebooks/week5/day21/_common.py`

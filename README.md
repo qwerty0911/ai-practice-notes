@@ -8,6 +8,7 @@ AI 교육 실습 내용을 정리한 저장소입니다. 원본 실습 노트북
 - `notes/01_models_and_training.md`: 모델 종류, 토크나이저, 추론, 파인튜닝, SFT/DPO, LoRA/양자화 정리
 - `notes/02_api_fastapi_streaming.md`: OpenAI API 호출, FastAPI 서버, 스트리밍 응답 정리
 - `notes/03_langchain_langgraph.md`: LangChain 구성 요소와 LangGraph 노드/엣지 단위 정리
+- `notes/04_advanced_rag_search.md`: 청킹, 검색 품질 진단, 하이브리드 검색, 쿼리 변환, 리랭킹 정리
 - `notes/notebook_index.md`: 주차/일차별 노트북 목록
 
 ## 학습 흐름
@@ -32,6 +33,13 @@ AI 교육 실습 내용을 정리한 저장소입니다. 원본 실습 노트북
    - PDF/엑셀/웹 데이터 기반 RAG
    - Vector DB 캐싱, chat history, Self-RAG, Adaptive RAG
    - LangGraph의 `State`, node function, edge, conditional edge 구성
+
+5. Advanced RAG Search
+   - chunk size/overlap 조정과 검색 품질 진단
+   - 한국어 임베딩 모델 비교와 `top_k` 튜닝
+   - BM25 + Vector hybrid search, RRF 융합
+   - Multi-Query, HyDE 기반 query transformation
+   - Cross-Encoder reranking과 모듈러 RAG 파이프라인
 
 ## 실행 환경
 
@@ -64,4 +72,6 @@ ollama pull llama3.2:3B
 - 경량 학습: `LoraConfig`, `BitsAndBytesConfig`
 - LangChain 기본 체인: `prompt | llm | parser`
 - RAG 체인: `retriever -> context -> prompt -> llm -> parser`
+- Hybrid Search: `BM25 + Vector -> RRF -> rerank`
+- Advanced RAG: `multi-query -> hybrid search -> rerank -> generate`
 - LangGraph 기본 구조: `StateGraph(State) -> add_node -> add_edge/add_conditional_edges -> compile`
