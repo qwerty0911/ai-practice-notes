@@ -80,3 +80,9 @@
 - `notebooks/week5/day21/05_rerank.ipynb`
 - `notebooks/week5/day21/06_modular_pipeline.ipynb`
 - `notebooks/week5/day21/_common.py`
+- `notebooks/week5/day22/01_llamaindex_rag.ipynb`
+- `notebooks/week5/day22/02_haystack_rag.ipynb`
+- `notebooks/week5/day22/04_dspy_rag.ipynb`
+- `notebooks/week5/day22/05_dspy_optimize.ipynb`
+- `notebooks/week5/day22/06_compare_frameworks.ipynb`
+- `notebooks/week5/day22/_common.py`

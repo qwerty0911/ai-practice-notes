@@ -33,6 +33,10 @@ faiss-cpu
 sentence-transformers
 rank-bm25
 llama-index
+llama-index-embeddings-huggingface
+llama-index-llms-openai-like
+haystack-ai
+dspy-ai
 tavily-python
 pillow
 torchvision

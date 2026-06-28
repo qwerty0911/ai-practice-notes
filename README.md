@@ -9,6 +9,7 @@ AI 교육 실습 내용을 정리한 저장소입니다. 원본 실습 노트북
 - `notes/02_api_fastapi_streaming.md`: OpenAI API 호출, FastAPI 서버, 스트리밍 응답 정리
 - `notes/03_langchain_langgraph.md`: LangChain 구성 요소와 LangGraph 노드/엣지 단위 정리
 - `notes/04_advanced_rag_search.md`: 청킹, 검색 품질 진단, 하이브리드 검색, 쿼리 변환, 리랭킹 정리
+- `notes/05_rag_framework_comparison.md`: LlamaIndex, Haystack, DSPy 기반 RAG 프레임워크 비교 정리
 - `notes/notebook_index.md`: 주차/일차별 노트북 목록
 
 ## 학습 흐름
@@ -40,6 +41,12 @@ AI 교육 실습 내용을 정리한 저장소입니다. 원본 실습 노트북
    - BM25 + Vector hybrid search, RRF 융합
    - Multi-Query, HyDE 기반 query transformation
    - Cross-Encoder reranking과 모듈러 RAG 파이프라인
+
+6. RAG Framework 비교
+   - LlamaIndex의 Index와 QueryEngine
+   - Haystack의 컴포넌트 기반 Pipeline
+   - DSPy의 Signature, Module, Optimizer
+   - 동일 코퍼스/질의 기준 답변, 출처, 지연 시간 비교
 
 ## 실행 환경
 
@@ -74,4 +81,5 @@ ollama pull llama3.2:3B
 - RAG 체인: `retriever -> context -> prompt -> llm -> parser`
 - Hybrid Search: `BM25 + Vector -> RRF -> rerank`
 - Advanced RAG: `multi-query -> hybrid search -> rerank -> generate`
+- RAG Frameworks: `LlamaIndex(Index)`, `Haystack(Pipeline)`, `DSPy(Module/Optimizer)`
 - LangGraph 기본 구조: `StateGraph(State) -> add_node -> add_edge/add_conditional_edges -> compile`
