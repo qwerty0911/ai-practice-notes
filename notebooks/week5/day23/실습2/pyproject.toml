@@ -1,0 +1,16 @@
+[project]
+name = "fastmcp-practice-02-template"
+version = "0.1.0"
+description = "MCP 서버를 실제 LLM에 연동해 모델의 도구 자동 선택·호출 과정을 관찰하는 실습"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi==0.136.3",
+    "fastmcp==3.3.1",
+    "httpx==0.28.1",
+    "loguru==0.7.3",
+    "openai==2.41.1",
+    "pydantic==2.13.4",
+    "python-dotenv==1.2.2",
+    "uvicorn[standard]==0.48.0",
+]

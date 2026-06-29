@@ -1,0 +1,15 @@
+[project]
+name = "fastmcp-practice-01-template"
+version = "0.1.0"
+description = "FastMCP 서버와 클라이언트의 기본 구조를 익히는 MCP 입문 실습"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi==0.136.3",
+    "fastmcp==3.3.1",
+    "httpx==0.28.1",
+    "loguru==0.7.3",
+    "pydantic==2.13.4",
+    "python-dotenv==1.2.2",
+    "uvicorn[standard]==0.48.0",
+]
