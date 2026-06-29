@@ -86,3 +86,10 @@
 - `notebooks/week5/day22/05_dspy_optimize.ipynb`
 - `notebooks/week5/day22/06_compare_frameworks.ipynb`
 - `notebooks/week5/day22/_common.py`
+- `notebooks/week5/day23/실습1/README.md`
+- `notebooks/week5/day23/실습1/server.py`
+- `notebooks/week5/day23/실습1/client.py`
+- `notebooks/week5/day23/실습2/README.md`
+- `notebooks/week5/day23/실습2/server.py`
+- `notebooks/week5/day23/실습2/client.py`
+- `notebooks/week5/day23/실습2/host.py`

@@ -16,6 +16,7 @@ accelerate
 python-dotenv
 openai
 fastapi
+fastmcp
 uvicorn
 httpx
 requests
