@@ -11,6 +11,7 @@ AI 교육 실습 내용을 정리한 저장소입니다. 원본 실습 노트북
 - `notes/04_advanced_rag_search.md`: 청킹, 검색 품질 진단, 하이브리드 검색, 쿼리 변환, 리랭킹 정리
 - `notes/05_rag_framework_comparison.md`: LlamaIndex, Haystack, DSPy 기반 RAG 프레임워크 비교 정리
 - `notes/06_mcp_fastmcp.md`: MCP 개념, FastMCP 서버/클라이언트, AI Host 도구 호출 흐름 정리
+- `notes/07_mcp_tool_design_and_errors.md`: MCP 도구 명세 설계, Pydantic 검증, 외부 API 연동, 예외 처리 정리
 - `notes/notebook_index.md`: 주차/일차별 노트북 목록
 
 ## 학습 흐름
@@ -55,6 +56,12 @@ AI 교육 실습 내용을 정리한 저장소입니다. 원본 실습 노트북
    - LLM Host의 도구 동적 발견, tool call, 실행 위임 흐름
    - 모델의 도구 선택과 Host의 실행 책임 분리
 
+8. MCP 도구 설계와 기능 구현
+   - 도구 이름과 docstring이 모델 선택에 미치는 영향
+   - Pydantic 기반 입력 스키마와 비즈니스 규칙 검증
+   - 비동기 외부 API 연동, timeout/retry/fallback
+   - 서버 로그와 모델용 ToolError 메시지 분리
+
 ## 실행 환경
 
 노트북별로 필요한 패키지가 조금씩 다릅니다. 기본 패키지는 아래처럼 설치할 수 있습니다.
@@ -90,4 +97,5 @@ ollama pull llama3.2:3B
 - Advanced RAG: `multi-query -> hybrid search -> rerank -> generate`
 - RAG Frameworks: `LlamaIndex(Index)`, `Haystack(Pipeline)`, `DSPy(Module/Optimizer)`
 - MCP tool use: `list_tools -> model tool_call -> call_tool -> final answer`
+- MCP robust tool: `schema validation -> business rule -> async API -> ToolError`
 - LangGraph 기본 구조: `StateGraph(State) -> add_node -> add_edge/add_conditional_edges -> compile`

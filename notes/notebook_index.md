@@ -93,3 +93,15 @@
 - `notebooks/week5/day23/실습2/server.py`
 - `notebooks/week5/day23/실습2/client.py`
 - `notebooks/week5/day23/실습2/host.py`
+- `notebooks/week5/day24/실습1/README.md`
+- `notebooks/week5/day24/실습1/server.py`
+- `notebooks/week5/day24/실습1/host.py`
+- `notebooks/week5/day24/실습2/README.md`
+- `notebooks/week5/day24/실습2/server.py`
+- `notebooks/week5/day24/실습2/client.py`
+- `notebooks/week5/day24/실습3/README.md`
+- `notebooks/week5/day24/실습3/server.py`
+- `notebooks/week5/day24/실습3/client.py`
+- `notebooks/week5/day24/실습4/README.md`
+- `notebooks/week5/day24/실습4/server.py`
+- `notebooks/week5/day24/실습4/client.py`
